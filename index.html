@@ -8,38 +8,10 @@
 </head>
 <body>
     <h1>Página de prueba</h1>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script>
-        function sendRequest() {
-            console.clear()
-            const endpointUrl = "https://ujpxmfpu4m.execute-api.us-east-1.amazonaws.com/v1/auth/authentication"
-            headers = {
-                "x-end-user-terminal": "10.20.30.90",
-                "x-request-id": "a28107f0-a9b7-43c6-bfb6-6f1a080a2710",
-                "x-end-user-login": "spaternina",
-                "x-end-user-request-date-time": "2021-11-11T09:57:00Z",
-                "x-api-key": "LrnxMVUqpK2E51diVY19X7eQtup46BaB7CO0yQxF",
-                "Content-Type": "application/json"
-            }
-            body = {
-                authentication: {
-                    login: "spaternina",
-                    password: "Sebastian26#"
-                }
-            }
-
-            axios.post(endpointUrl, body, { headers: headers })
-                .then(response => {
-                    console.log("Successful request")
-                    console.log(response)
-                })
-                .catch(error => {
-                    console.error("Something wrong happened.")
-                    console.error(error)
-                })
-        }
-        
-    </script>
-    <button onclick="sendRequest()">Enviar petición</button>
+      <iframe
+        width="960"
+        height="720"
+        src="https://us-west-2.quicksight.aws.amazon.com/sn/embed/share/accounts/681989517074/dashboards/Dashboard_Id_Presentacion_BAM_workflow_Gfg?directory_alias=cobis-poc-dev"
+    ></iframe>
 </body>
 </html>
